@@ -1,8 +1,8 @@
 rootapproximate
 ===============
 
-C++ program (side project) that approximates a root of mathematical function/expression.<br>
-The program reads .rtap file as input and determines approximate root of the expression.<br>
+C++ program (side project) that approximates a root of a valid mathematical function/expression.<br>
+The program reads a .rtap file as input and determines the approximate root of the expression.<br>
 <br>
 .rtap format (see inpu.rtap as an example):<br>
 <br>
