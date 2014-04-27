@@ -43,13 +43,13 @@ vector <double> Function::smallestXY() {
 
             if (debug) cout << replacement << " VALUE:" << evaluated_value<< endl;
             if (x == minx) {
-            closestrootXY.push_back(atof(replacement.c_str()));
-            closestrootXY.push_back(evaluated_value);
-        } else if (abs(closestrootXY[1]) > abs(evaluated_value)) {
-            closestrootXY[0]=(atof(replacement.c_str()));
-            closestrootXY[1]=(evaluated_value);
+                closestrootXY.push_back(atof(replacement.c_str()));
+                closestrootXY.push_back(evaluated_value);
+            } else if (abs(closestrootXY[1]) > abs(evaluated_value)) {
+                closestrootXY[0]=(atof(replacement.c_str()));
+                closestrootXY[1]=(evaluated_value);
+            }
+            if (debug)  cout << "CLOSEST TO ROOT XY SO FAR" << closestrootXY[0] << ":" << closestrootXY[1] << endl;
         }
-        if (debug)  cout << "CLOSEST TO ROOT XY SO FAR" << closestrootXY[0] << ":" << closestrootXY[1] << endl;
-    }
-    return closestrootXY;
+        return closestrootXY;
 }

@@ -21,6 +21,10 @@
 using namespace std;
 
 // removeOuterParen(string s) removes outer parenthesis of string s
+// and returns a resulting substring (if the string do not have
+// at least one of each left and right parenthesis, the same
+// string is returned
+
 string removeOuterParen(string s);
 
 /**
@@ -34,12 +38,13 @@ string removeOuterParen(string s);
 class Scope {
     string s;
     public:
-        void changeScope(string s) {
-            this->s = s;
-        }
-        string getStr() {
-            return s;
-        }
+
+        // ChangeScope(s) changes scope with new expression string
+        void changeScope(string s) ;
+
+        // getStr returns a string inside the scope
+        string getStr() ;
+
         Scope(string s) : s(s) {}
 
         // Generate expression object from the string s

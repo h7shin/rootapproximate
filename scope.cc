@@ -24,6 +24,14 @@ string removeOuterParen(string s) {
     return s;
 }
 
+void Scope::changeScope(string s) {
+    this->s = s;
+}
+
+string Scope::getStr() {
+    return s;
+}
+
 // see interface
 
 Expression *Scope::generateExpression() {
