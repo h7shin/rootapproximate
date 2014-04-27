@@ -21,14 +21,11 @@
 using namespace std;
 
 // removeOuterParen(string s) removes outer parenthesis of string s
-<<<<<<< HEAD
 // and returns a resulting substring (if the string do not have
 // at least one of each left and right parenthesis, the same
 // string is returned
 
-=======
 // unless string s has no left parenthesis or has no right parenthesis
->>>>>>> 6fc18b702cb2da95d6adc16fc2c0237bf96ad3b4
 string removeOuterParen(string s);
 
 /**
