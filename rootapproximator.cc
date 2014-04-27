@@ -9,7 +9,7 @@ vector <double> RootApproximator::getRoot (double startx, double finalx, int res
 
     while (resolution > 0) {
         cout << startx << "<= x <=" << finalx << endl;
-        eq = Function(y, (finalx - startx)/10, startx, finalx);
+        eq = Function(y, (finalx - startx)/100, startx, finalx);
         closestrootXY = eq.smallestXY();
         startx = (startx > (closestrootXY[0]-(finalx - startx)/10)) ? startx : closestrootXY[0]-(finalx - startx)/10;
         finalx = (finalx < (closestrootXY[0]+(finalx - startx)/10)) ? finalx : closestrootXY[0]+(finalx - startx)/10;
