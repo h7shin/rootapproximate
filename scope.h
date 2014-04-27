@@ -21,6 +21,7 @@
 using namespace std;
 
 // removeOuterParen(string s) removes outer parenthesis of string s
+// unless string s has no left parenthesis or has no right parenthesis
 string removeOuterParen(string s);
 
 /**
