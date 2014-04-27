@@ -20,7 +20,7 @@ class RootApproximator {
 
         RootApproximator() : y("") {};
         RootApproximator(string y) : y(y) {};
-        double getRoot (double startx, double finalx, int resolution);
+        vector <double> getRoot (double startx, double finalx, int resolution);
 };
 
 #endif // _ROOTAPPROXIMATOR_H_

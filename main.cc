@@ -4,6 +4,7 @@
 #include <istream>
 #include <iostream>
 #include <string>
+#include <vector>
 using namespace std;
 
 
@@ -53,6 +54,7 @@ int main () {
     string buffer;
     string filename;
     int linenumber = 0;
+    vector <double> vec;
 
     cout << "RootApproxmiation" << endl;
     cout << "-------------------------------------------------" << endl;
@@ -76,7 +78,7 @@ int main () {
     }
 
     ofstream of ("output.csv", ofstream::out);
-
+    of <<  "x (apx), y , %Error" << endl;
     ifstream file (filename.c_str());
 
     // Read input.rtap File
@@ -103,7 +105,10 @@ int main () {
 
                 // Approximate Root
                 r = RootApproximator(xyexpression);
-                of << r.getRoot( 0, 10, resolution)  << ", " << line <<  endl;
+                vec = r.getRoot( 0, 10, resolution);
+
+                // Print x, y, and percent error rate
+                of <<  vec[0] << ", " << line << ", "<< abs(vec[1]/vec[0]*100) << "%"<< endl;
                 xyexpression = originalxyexpression;
             }
             linenumber++;

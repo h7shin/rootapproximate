@@ -25,7 +25,6 @@ using namespace std;
 // at least one of each left and right parenthesis, the same
 // string is returned
 
-// unless string s has no left parenthesis or has no right parenthesis
 string removeOuterParen(string s);
 
 /**

@@ -1,6 +1,6 @@
 #include "rootapproximator.h"
 
-double RootApproximator::getRoot (double startx, double finalx, int resolution) {
+vector <double> RootApproximator::getRoot (double startx, double finalx, int resolution) {
     char approximate = '~';
 
     bool debug = 0;
@@ -17,5 +17,5 @@ double RootApproximator::getRoot (double startx, double finalx, int resolution) 
     }
 
     cout <<  closestrootXY[0] << " is the result for x with eval = "<< closestrootXY[1] << " " << approximate << "== 0"<< endl << endl;
-    return closestrootXY[0];
+    return closestrootXY;
 }
