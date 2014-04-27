@@ -5,6 +5,7 @@
 #include <iostream>
 #include <string>
 #include <vector>
+#include <iomanip>      // std::setprecision
 using namespace std;
 
 
@@ -108,7 +109,7 @@ int main () {
                 vec = r.getRoot( 0, 10, resolution);
 
                 // Print x, y, and percent error rate
-                of <<  vec[0] << ", " << line << ", "<< abs(vec[1]/vec[0]*100) << "%"<< endl;
+                of  << std::setprecision(10) <<  vec[0] << ", " << line << ", "<< abs(vec[1]/vec[0]*100) << "%"<< endl;
                 xyexpression = originalxyexpression;
             }
             linenumber++;

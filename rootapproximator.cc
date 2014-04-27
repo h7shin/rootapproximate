@@ -1,11 +1,12 @@
 #include "rootapproximator.h"
+#include <iomanip>
 
 vector <double> RootApproximator::getRoot (double startx, double finalx, int resolution) {
     char approximate = '~';
 
     bool debug = 0;
     vector<double> closestrootXY;
-    Function eq(y , (finalx - startx)/10, startx, finalx );
+    Function eq(y , (finalx - startx)/100, startx, finalx );
 
     while (resolution > 0) {
         cout << startx << "<= x <=" << finalx << endl;
@@ -16,6 +17,6 @@ vector <double> RootApproximator::getRoot (double startx, double finalx, int res
         resolution -= 1;
     }
 
-    cout <<  closestrootXY[0] << " is the result for x with eval = "<< closestrootXY[1] << " " << approximate << "== 0"<< endl << endl;
+    cout << std::setprecision(10) << closestrootXY[0] << " is the result for x with eval = "<< closestrootXY[1] << " " << approximate << "== 0"<< endl << endl;
     return closestrootXY;
 }
