@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="rootapproximation" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/rootapproximation" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/rootapproximation" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="binaryexpression.h" />
+		<Unit filename="differencebinaryexpression.h" />
+		<Unit filename="expression.h" />
+		<Unit filename="function.cc" />
+		<Unit filename="function.h" />
+		<Unit filename="identityunaryexpression.h" />
+		<Unit filename="logcommonunaryexpression.h" />
+		<Unit filename="logunaryexpression.h" />
+		<Unit filename="main.cc" />
+		<Unit filename="negativeunaryexpression.h" />
+		<Unit filename="numericunaryexpression.h" />
+		<Unit filename="powerbinaryexpression.h" />
+		<Unit filename="productbinaryexpression.h" />
+		<Unit filename="rootapproximator.cc" />
+		<Unit filename="rootapproximator.h" />
+		<Unit filename="scope.cc" />
+		<Unit filename="scope.h" />
+		<Unit filename="sumbinaryexpression.h" />
+		<Unit filename="unaryexpression.h" />
+		<Extensions>
+			<code_completion />
+			<envvars />
+			<debugger />
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

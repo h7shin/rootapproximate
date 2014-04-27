@@ -32,6 +32,10 @@ if the operator is '-' either it is of three forms
     ((...) - (...)) difference
 
 --------------------------------------------------------
+Program calculates approximate root of expression from input of y values
+(after moving all of the variables and numbers to the right side of the equation)
+and save the output of the calculations in csv format
+
 **/
 
 
@@ -71,7 +75,7 @@ int main () {
         filename = "input.rtap";
     }
 
-    ofstream of ("output.txt", ofstream::out);
+    ofstream of ("output.csv", ofstream::out);
 
     ifstream file (filename.c_str());
 
@@ -99,7 +103,7 @@ int main () {
 
                 // Approximate Root
                 r = RootApproximator(xyexpression);
-                of << r.getRoot( 0, 10, resolution)  << endl;
+                of << r.getRoot( 0, 10, resolution)  << ", " << line <<  endl;
                 xyexpression = originalxyexpression;
             }
             linenumber++;

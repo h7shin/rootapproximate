@@ -12,6 +12,7 @@ string removeOuterParen(string s) {
             break;
         }
     }
+
     for (int j = 0; j < s.length(); j++) {
         if ((s[s.length() - 1 - j] == ')')) {
             if (leftparenfound) s[s.length() - 1 - j] = ' ';
