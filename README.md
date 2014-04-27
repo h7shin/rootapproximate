@@ -7,7 +7,7 @@ The program reads a .rtap file as an input and determines the approximate root o
 .rtap format (see input.rtap as an example):<br>
 <br>
 First line : some mathematical expression, bring all variables to the right hand side<br>
-Second line: resolution 1: low resolution, 5: high resolution (umlimited)<br>
+Second line: number of iteration/resolution from 1 (low resolution, 100x) to 15 (high resolution safe)<br>
 Third line : start value of x<br>
 Fourth line: end value of x<br>
 first y value<br>
