@@ -31,8 +31,7 @@ string removeOuterParen(string s);
  Class Scope contains a mathematical expression
  a string of numbers, parenthesis, mathematical
  operators and variable x. It can generate an Expression tree
- by calling generateExpression which recursively builds an expression
- tree of number of branches per node is either one or two
+ by calling generateExpression()
 **/
 
 class Scope {
