@@ -3,7 +3,6 @@
 
 #include "function.h"
 #include <string>
-using namespace std;
 
 /**
 RootApproximator is a wrapper object of string y
@@ -14,13 +13,13 @@ to 0 through getRoot() method
 
 class RootApproximator {
 
-        string y;
+        std::string y;
 
     public:
 
         RootApproximator() : y("") {};
-        RootApproximator(string y) : y(y) {};
-        vector <double> getRoot (double startx, double finalx, int resolution);
+        RootApproximator(std::string y) : y(y) {};
+        std::vector <double> getRoot (double startx, double finalx, int resolution);
 };
 
 #endif // _ROOTAPPROXIMATOR_H_

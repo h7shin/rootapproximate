@@ -1,4 +1,5 @@
 #include "scope.h"
+using namespace std;
 
 // see interface
 

@@ -1,4 +1,5 @@
 #include "function.h"
+using namespace std;
 
 vector <double> Function::smallestXY() {
 

@@ -1,5 +1,6 @@
 #include "rootapproximator.h"
 #include <iomanip>
+using namespace std;
 
 vector <double> RootApproximator::getRoot (double startx, double finalx, int resolution) {
     char approximate = '~';

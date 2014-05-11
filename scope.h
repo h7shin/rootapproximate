@@ -18,14 +18,12 @@
 #include <stdlib.h>     /* atof */
 #include <iostream>
 
-using namespace std;
-
 // removeOuterParen(string s) removes outer parenthesis of string s
 // and returns a resulting substring (if the string do not have
 // at least one of each left and right parenthesis, the same
 // string is returned
 
-string removeOuterParen(string s);
+std::string removeOuterParen(std::string s);
 
 /**
  Class Scope contains a mathematical expression
@@ -35,16 +33,18 @@ string removeOuterParen(string s);
 **/
 
 class Scope {
-    string s;
+
+    std::string s;
+
     public:
 
         // ChangeScope(s) changes scope with new expression string
-        void changeScope(string s) ;
+        void changeScope(std::string s) ;
 
         // getStr returns a string inside the scope
-        string getStr() ;
+        std::string getStr() ;
 
-        Scope(string s) : s(s) {}
+        Scope(std::string s) : s(s) {}
 
         // Generate expression object from the string s
         Expression *generateExpression();

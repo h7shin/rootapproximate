@@ -4,7 +4,7 @@
 #include <cmath>
 #include "expression.h"
 #include <iostream>
-using namespace std;
+
 
 /** Unary Expression is a subclass of Expression
 that contains one subexpression of type Expression **/
